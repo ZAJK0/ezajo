@@ -1,0 +1,137 @@
+.productImg{
+    width: 20rem !important;
+    height: 15rem !important;
+}
+.mainContent{
+    display: flex;
+    flex-direction: row;
+}
+
+.container{
+    width: 80vw !important;
+    /* max-width: 1000px; */
+}
+.obsah{
+    width: 80rem !important;
+    max-width: 70vw !important;
+}
+
+.buttony{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: space-around !important;
+}
+.brand{
+    width: 5rem;
+    height: 5rem;
+}
+
+.styleNone{
+    list-style: none !important;
+}
+
+.produkty{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+}
+
+.produkt{
+    width: 16rem;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+
+}
+
+.produktKat{
+    width: 80vw;
+    margin-left: 12vw;
+}
+
+.produktDetail{
+    margin-top: 3rem;
+    width: 80vw;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.imgTest{
+    width: 30rem !important;
+    height: 30rem !important;
+    margin: 0 3rem 0 3rem;
+}
+
+.detailInfo{
+    
+    width: 3rem ;
+    background-color: aqua !important;
+    
+}
+
+.cena{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    color: red;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.popis{
+    margin-top: 8rem;
+    width: 60vw;
+    margin-left: 20vw;
+}
+.popis span{
+    font-size: large;
+    font-stretch: extra-expanded;
+}
+
+.kategorie{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.sto{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* .hlavnaajedina{
+    width: 80%;
+    height: auto;  
+    padding-left: 20vw;
+    padding-bottom: 100px;
+}
+
+.hlavnaajedina div{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.product-card{
+    border: 1px solid black;
+    border-radius: 6%;
+    padding: 10px;
+}
+
+.card-container img{
+    width: 100%;
+    border-radius: 8%;
+    height: 400px;
+    object-fit: contain;
+} */
