@@ -16,7 +16,7 @@ include 'header.php';
 include 'sidebar.php'	
 ?>
 <!-- Sidebar end=============================================== -->
-<div class="span9">
+<!-- <div class="span9">
     <ul class="breadcrumb">
         <li><a href="index.php">Domov</a> <span class="divider">/</span></li>
         <li class="active">Názov Produktu</li>
@@ -106,14 +106,14 @@ include 'sidebar.php'
 </div>
 </div>
 </div>
-</div>
+</div> -->
 
 
 <!-- MainBody End ============================= -->
 
 <!-- Footer ================================================================== -->
 
-	<div  id="footerSection">
+	<!-- <div  id="footerSection">
 
 	<div class="container">
 
@@ -183,9 +183,9 @@ include 'sidebar.php'
 
 		<p class="pull-right">&copy; Bootshop</p>
 
-	</div><!-- Container End -->
-
 	</div>
+
+	</div> -->
 
 <!-- Placed at the end of the document so the pages load faster ============================================= -->
 
@@ -205,7 +205,7 @@ include 'sidebar.php'
 
 	<!-- Themes switcher section ============================================================================================= -->
 
-<div id="secectionBox">
+<!-- <div id="secectionBox">
 
 <link rel="stylesheet" href="themes/switch/themeswitch.css" type="text/css" media="screen" />
 
@@ -309,7 +309,7 @@ include 'sidebar.php'
 
 	</div>
 
-</div>
+</div> -->
 
 <span id="themesBtn"></span>
 

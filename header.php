@@ -97,27 +97,42 @@
 </a>
 
   <div class="navbar-inner">
+	
+		<a class="brand" href="index.php"><img src="css/logo.png" alt="Bootsshop"/></a>
+		<?php
+		// Initialize the variable
+		$inputValue = '';
 
-    <a class="brand" href="index.php"><img src="css/logo.png" alt="Bootsshop"/></a>
+		// Check if the form is submitted
+		if ($_SERVER["REQUEST_METHOD"] == "POST") {
+			// Get the value from the input field
+			$inputValue = $_POST["inputField"];
+		}
+		?>
+			<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+				<label for="inputField">Enter Text:</label>
+				<input type="text" id="inputField" name="inputField" value="<?php echo htmlspecialchars($inputValue); ?>" required>
+				<button type="submit">Submit</button>
+			</form>
 
-		<form class="form-inline navbar-search" method="post" action="products.php" >
+			<form class="form-inline navbar-search" method="post" action="products.php" >
 
-		<input id="srchFld" class="srchTxt" type="text" />
+			<input id="srchFld" class="srchTxt" type="text" />
 
-		  <select class="srchTxt">
+			<select class="srchTxt">
 
-			<option>VŠETKO</option>
+				<option>VŠETKO</option>
 
 
-		</select> 
+			</select> 
 
-		  <button type="submit" id="submitButton" class="btn btn-primary">Choď</button>
+			<button type="submit" id="submitButton" class="btn btn-primary">Choď</button>
 
-    </form>
+		</form>
 
     <ul id="topMenu" class="nav pull-right">
 
-	 <li class=""><a href="special_offer.php">Špeciálne offerky</a></li>
+	 <!-- <li class=""><a href="special_offer.php">Špeciálne offerky</a></li> -->
 
 	 <li class=""><a href="normal.php">Delivery</a></li>
 
