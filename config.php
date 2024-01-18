@@ -10,4 +10,5 @@ $DB_charset = 'utf8mb4';
 
 $DB = new PDO($DB_connection.":host=".$serverName.";dbname=".$DB_name.";charset=".$DB_charset, $DB_user, $DB_password);
 
+
 ?>

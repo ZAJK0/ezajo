@@ -1,6 +1,7 @@
 .productImg{
     width: 20rem !important;
     height: 15rem !important;
+    object-fit: contain !important;
 }
 .mainContent{
     display: flex;
@@ -11,11 +12,14 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    margin-left: 0.5rem !important;
 }
 .container{
     width: 80vw !important;
     /* max-width: 1000px; */
 }
+
+
 .obsah{
     width: 80rem !important;
     max-width: 70vw !important;
@@ -28,6 +32,7 @@
     justify-content: space-around !important;
 }
 .brand{
+    margin-left: 2rem !important;
     width: 5rem;
     height: 5rem;
 }
@@ -105,14 +110,40 @@
     width: 100%;
 }
 
-.navbar-inner{
+.navbar-vnut{
+    border-radius: 0.5rem;
+    background-color: rgb(42, 60, 71);
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: space-between !important;
     align-items: center;
 }
 
+.sidebar{
+    min-width: 15rem !important;
+}
+
+.search{
+    margin: 0 !important;
+    height: 2.5rem !important ;
+    width: 20rem !important;
+    background-image: none !important;
+    font-size: large !important;
+    color: #000 !important;
+}
+.searchBut{
+    margin: 0 1rem !important;
+    height: 2.5rem !important ;
+    width: 5rem !important;
+}
+
+.searchForm{
+    display: flex;
+    margin: 0 !important;
+    justify-content: center;
+    align-items: center;
+}
 
 
 

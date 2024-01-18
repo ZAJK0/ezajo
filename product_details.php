@@ -20,7 +20,7 @@
 		<div class="product-path">
 			<ul class="produktKat">
 				<li><a class="kategorie" href="index.php">Domov</a></li>
-				<li><a  class="kategorie" href="products.php">Produkty</a></li>
+				<!-- <li><a  class="kategorie" href="products.php">Produkty</a></li> -->
 				<div><h3><?php foreach ($zvoleny_produkt as $produktik) echo ($produktik->kategoria) ?></h3></div>
 				<!-- <li class="active"><p><?php foreach ($zvoleny_produkt as $produktik) echo ($produktik->nazov) ?></p></li> -->
 			</ul>	

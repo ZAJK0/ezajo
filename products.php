@@ -1,6 +1,13 @@
 <?php
 	include "config.php";
-	include "header.php";
+	include "header.php";?>
+
+    <div id="mainBody">
+
+	<div class="container">
+
+	<div class="row">
+<?php
 	include "sidebar.php";
 
 
@@ -30,6 +37,9 @@
 	}
 
 ?>
+
+<div class="container">
+<div class="row">
 <div class="span-9">
 	<?php 
 		if (isset($_GET['k1'])){
@@ -107,7 +117,10 @@
 			$sql_k = $k1;
 			$lastItem = $k1;
 		}
-
+        echo("<h3>$sql_k</h3>");
+        echo("<h1>$lastItem</h1>");
+        echo("<title><?=$zvoleny_produkt?></title>");
+        $prevNazvy = $sql_k;
 		$sql = "SELECT DISTINCT kategoria FROM `projektdatart` WHERE kategoria LIKE '$sql_k%'";
 
 
@@ -122,9 +135,6 @@
 			$nase_kategorie = explode(" | ", $kategoria);
 			if (isset($nase_kategorie[$pocet_kategorii])) {
 				$pod_kategoria = $nase_kategorie[$pocet_kategorii];
-				$prevNazov=$lastItem;
-				$prevNazvy=$sql_k;
-
 			} else {
 				
 				$pod_kategoria = "";
@@ -145,9 +155,6 @@
 		if($je_podkategoria){
 		
 		?>
-	<h3><?= $prevNazvy?></h3>
-    <h1><?= $prevNazov?></h1>
-
 	<div class="container-categories">
 		<ul class="items">
 			<?php 	
@@ -257,4 +264,3 @@
 	include "parts/footer.php";
 	
 	?>
-

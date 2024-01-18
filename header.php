@@ -12,8 +12,13 @@
     <meta name="description" content="">
 
     <meta name="author" content="">
-	<title><?php echo isset($zvoleny_produkt) ? implode('', array_column($zvoleny_produkt, 'nazov')): "EZAJO" ?></title>
-
+	<title><?php if(isset($zvoleny_produkt)){
+		echo implode('', array_column($zvoleny_produkt, 'nazov'));}
+		elseif(isset($_GET['k1'])){
+				echo $_GET['k1'];}
+		else{
+			echo "EZAJO";}
+     ?></title>
 
 <!--Less styles -->
 
@@ -51,7 +56,7 @@
 	
 	<!-- fav and touch icons -->
 	
-    <link rel="shortcut icon" href="themes/images/ico/favicon.ico">
+    <link rel="shortcut icon" href="css/logo.png">
 	
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="themes/images/ico/apple-touch-icon-144-precomposed.png">
 	
@@ -60,7 +65,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="themes/images/ico/apple-touch-icon-72-precomposed.png">
 	
     <link rel="apple-touch-icon-precomposed" href="themes/images/ico/apple-touch-icon-57-precomposed.png">
-	
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
 	<style type="text/css" id="enject"></style>
 	<link href="./css/style.css" rel="stylesheet"/>
 
@@ -96,7 +101,7 @@
 
 </a>
 
-  <div class="navbar-inner">
+  <div class="navbar-vnut">
 	
 		<a class="brand" href="index.php"><img src="css/logo.png" alt="Bootsshop"/></a>
 		<?php
@@ -109,32 +114,18 @@
 			$inputValue = $_POST["inputField"];
 		}
 		?>
-			<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-				<label for="inputField">Enter Text:</label>
-				<input type="text" id="inputField" name="inputField" value="<?php echo htmlspecialchars($inputValue); ?>" required>
-				<button type="submit">Submit</button>
-			</form>
+			
+			<form method="post" action="search.php" class="searchForm" > 
+                <input class="search" id="srchFld" name="srch" type="text" />
+                <button class="searchBut" type="submit" id="submitButton" >Hľadať</button>
+            </form>
+			
 
-			<form class="form-inline navbar-search" method="post" action="products.php" >
-
-			<input id="srchFld" class="srchTxt" type="text" />
-
-			<select class="srchTxt">
-
-				<option>VŠETKO</option>
-
-
-			</select> 
-
-			<button type="submit" id="submitButton" class="btn btn-primary">Choď</button>
-
-		</form>
-
-    <ul id="topMenu" class="nav pull-right">
+    <!-- <ul id="topMenu" class="nav pull-right"> -->
 
 	 <!-- <li class=""><a href="special_offer.php">Špeciálne offerky</a></li> -->
 
-	 <li class=""><a href="normal.php">Delivery</a></li>
+	 <!-- <li class=""><a href="normal.php">Delivery</a></li>
 
 	 <li class=""><a href="contact.php">Kontakt</a></li>
 
@@ -142,9 +133,9 @@
 
 	 <a href="#login" role="button" data-toggle="modal" style="padding-right:0"><span class="btn btn-large btn-success">Login</span></a>
 
-	<div id="login" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="false" >
+	<div id="login" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="false" > -->
 
-		  <div class="modal-header">
+		  <!-- <div class="modal-header">
 
 			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">�</button>
 
@@ -184,7 +175,7 @@
 
 			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
 
-		  </div>
+		  </div> -->
 
 	</div>
 
@@ -201,4 +192,3 @@
 </div>
 
 <!-- Header End====================================================================== -->
-
