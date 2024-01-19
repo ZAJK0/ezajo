@@ -83,41 +83,115 @@
 			$pole_kategorii_url[] = $k10;
 		}
 
-
+		
 		$pocet_kategorii = count($pole_kategorii_url);
 		
 		if(isset($k10)){
 			$sql_k = $k1." | ".$k2." | ".$k3." | ".$k4." | ".$k5." | ".$k6." | ".$k7." | ".$k8." | ".$k9." | ".$k10;
-			$lastItem = $k10;}
+			$lastItem = $k10;
+			?>
+			<h3><a href="products.php?k1=<?=$k1?>"><?=$k1?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>"><?=$k2?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>"><?=$k3?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>"><?=$k4?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>&k5=<?=$k5?>"><?=$k5?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>&k5=<?=$k5?>&k6=<?=$k6?>"><?=$k6?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>&k5=<?=$k5?>&k6=<?=$k6?>&k7=<?=$k7?>"><?=$k7?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>&k5=<?=$k5?>&k6=<?=$k6?>&k7=<?=$k7?>&k8=<?=$k8?>"><?=$k8?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>&k5=<?=$k5?>&k6=<?=$k6?>&k7=<?=$k7?>&k8=<?=$k8?>&k9=<?=$k9?>"><?=$k9?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>&k5=<?=$k5?>&k6=<?=$k6?>&k7=<?=$k7?>&k8=<?=$k8?>&k9=<?=$k9?>&k10=<?=$k10?>"><?=$k10?></a></h3>
+			<?php}
 		elseif(isset($k9)){
 			$sql_k = $k1." | ".$k2." | ".$k3." | ".$k4." | ".$k5." | ".$k6." | ".$k7." | ".$k8." | ".$k9;
 			$lastItem = $k9;
+			?>
+			<h3><a href="products.php?k1=<?=$k1?>"><?=$k1?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>"><?=$k2?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>"><?=$k3?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>"><?=$k4?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>&k5=<?=$k5?>"><?=$k5?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>&k5=<?=$k5?>&k6=<?=$k6?>"><?=$k6?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>&k5=<?=$k5?>&k6=<?=$k6?>&k7=<?=$k7?>"><?=$k7?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>&k5=<?=$k5?>&k6=<?=$k6?>&k7=<?=$k7?>&k8=<?=$k8?>"><?=$k8?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>&k5=<?=$k5?>&k6=<?=$k6?>&k7=<?=$k7?>&k8=<?=$k8?>&k9=<?=$k9?>"><?=$k9?></a></h3>
+			<?php
 		}elseif(isset($k8)){
 			$sql_k = $k1." | ".$k2." | ".$k3." | ".$k4." | ".$k5." | ".$k6." | ".$k7." | ".$k8;
 			$lastItem = $k8;
+			?>
+			<h3><a href="products.php?k1=<?=$k1?>"><?=$k1?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>"><?=$k2?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>"><?=$k3?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>"><?=$k4?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>&k5=<?=$k5?>"><?=$k5?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>&k5=<?=$k5?>&k6=<?=$k6?>"><?=$k6?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>&k5=<?=$k5?>&k6=<?=$k6?>&k7=<?=$k7?>"><?=$k7?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>&k5=<?=$k5?>&k6=<?=$k6?>&k7=<?=$k7?>&k8=<?=$k8?>"><?=$k8?></a></h3>
+			<?php
 		}elseif(isset($k7)){
 			$sql_k = $k1." | ".$k2." | ".$k3." | ".$k4." | ".$k5." | ".$k6." | ".$k7;
 			$lastItem = $k7;
+			?>
+			<h3><a href="products.php?k1=<?=$k1?>"><?=$k1?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>"><?=$k2?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>"><?=$k3?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>"><?=$k4?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>&k5=<?=$k5?>"><?=$k5?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>&k5=<?=$k5?>&k6=<?=$k6?>"><?=$k6?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>&k5=<?=$k5?>&k6=<?=$k6?>&k7=<?=$k7?>"><?=$k7?></a></h3>
+			<?php
 		}elseif(isset($k6)){
 			$sql_k = $k1." | ".$k2." | ".$k3." | ".$k4." | ".$k5." | ".$k6;
+			$lastItem = $k5;
+			?>
+			<h3><a href="products.php?k1=<?=$k1?>"><?=$k1?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>"><?=$k2?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>"><?=$k3?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>"><?=$k4?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>&k5=<?=$k5?>"><?=$k5?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>&k5=<?=$k5?>&k6=<?=$k6?>"><?=$k6?></a></h3>
+			<?php
 			$lastItem = $k6;
 		}elseif(isset($k5)){
 			$sql_k = $k1." | ".$k2." | ".$k3." | ".$k4." | ".$k5;
 			$lastItem = $k5;
+			?>
+			<h3><a href="products.php?k1=<?=$k1?>"><?=$k1?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>"><?=$k2?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>"><?=$k3?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>"><?=$k4?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>&k5=<?=$k5?>"><?=$k5?></a></h3>
+			<?php
 		}elseif(isset($k4)){
 			$sql_k = $k1." | ".$k2." | ".$k3." | ".$k4;
+			?>
+			<h3><a href="products.php?k1=<?=$k1?>"><?=$k1?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>"><?=$k2?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>"><?=$k3?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>&k4=<?=$k4?>"><?=$k4?></a></h3>
+			<?php
 			$lastItem = $k4;
 		}elseif(isset($k3)){
 			$sql_k = $k1." | ".$k2." | ".$k3;
 			$lastItem = $k3;
+			?>
+			<h3><a href="products.php?k1=<?=$k1?>"><?=$k1?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>"><?=$k2?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>&k3=<?=$k3?>"><?=$k3?></a></h3>
+			<?php
 		}elseif(isset($k2)){
 			$sql_k = $k1." | ".$k2;
-			$lastItem = $k2;
+			$lastItem = $k2;?>
+			<h3><a href="products.php?k1=<?=$k1?>"><?=$k1?></a> | 
+			<a href="products.php?k1=<?=$k1?>&k2=<?=$k2?>"><?=$k2?></a></h3>
+			<?php
 		}elseif(isset($k1)){
 			$sql_k = $k1;
-			$lastItem = $k1;
+			$lastItem = $k1;?>
+			<h3><a href="products.php?k1=<?=$k1?>"><?=$k1?></a></h3>
+		
+			<?php
 		}
-        echo("<h3>$sql_k</h3>");
         echo("<h1>$lastItem</h1>");
         echo("<title><?=$zvoleny_produkt?></title>");
         $prevNazvy = $sql_k;
@@ -261,6 +335,6 @@
 			</div>
 	</div>
 	<?php
-	include "parts/footer.php";
+	// include "parts/footer.php";
 	
 	?>
